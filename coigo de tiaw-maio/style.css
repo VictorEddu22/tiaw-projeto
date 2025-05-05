@@ -1,0 +1,142 @@
+/* General body and layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dff7e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  /* Container with soft light green background with white form */
+  .container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  h1 {
+    color: #317a3e;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  /* Label styling - large and easy to read */
+  label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2e5d28;
+    margin-bottom: 8px;
+    user-select: none;
+  }
+  
+  /* Input fields styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2.5px solid #a6d7a7;
+    outline: none;
+    box-sizing: border-box;
+    color: #2e5d28;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="date"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    border-color: #317a3e;
+    box-shadow: 0 0 10px #ace5a8;
+  }
+  
+  /* Radio container spacing */
+  .radio-group {
+    margin-bottom: 25px;
+  }
+  
+  .radio-label {
+    font-size: 1.2rem;
+    color: #2e5d28;
+    user-select: none;
+  }
+  
+  .radio-option {
+    margin-right: 25px;
+    font-size: 1.2rem;
+    color: #2e5d28;
+    user-select: none;
+  }
+  
+  input[type=radio] {
+    accent-color: #4caf50;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  /* Submit button styling */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #8fca64;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 16px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: #6aa737;
+    outline: none;
+  }
+  
+  /* Error messages styling */
+  .error-message {
+    color: #be2617;
+    font-size: 1.1rem;
+    margin-top: 6px;
+  }
+  
+  /* Responsive and user-friendly */
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+      max-width: 100%;
+    }
+  
+    label, .radio-label, .radio-option {
+      font-size: 1.1rem;
+    }
+    
+    button[type="submit"] {
+      font-size: 1.3rem;
+      padding: 14px 0;
+    }
+  }
+  

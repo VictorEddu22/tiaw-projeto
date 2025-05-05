@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Cadastro de Usuário</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container" role="main" aria-label="Formulário de cadastro para agendamento de consultas">
+    <h1 style="margin: 20px;">Cadastro de Usuário</h1>
+    <form id="registrationForm" novalidate autocomplete="off" aria-describedby="formInstructions">
+      <p id="formInstructions" class="sr-only">Formulário para cadastro. Campos obrigatórios indicados.</p>
+
+      <!-- Nome -->
+      <label for="nome">Nome Completo *</label>
+      <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Digite seu nome completo" autocomplete="name" />
+
+      <!-- CPF -->
+      <label for="cpf">CPF *</label>
+      <input type="text" id="cpf" name="cpf" required aria-required="true" placeholder="Digite seu CPF" maxlength="14" autocomplete="off" />
+
+      <!-- Data de Nascimento -->
+      <label for="dataNascimento">Data de Nascimento *</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required aria-required="true" max="" />
+
+      <!-- Email -->
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" required aria-required="true" placeholder="exemplo@dominio.com" autocomplete="email" />
+
+      <!-- Telefone -->
+      <label for="telefone">Telefone *</label>
+      <input type="tel" id="telefone" name="telefone" required aria-required="true" placeholder="(XX) XXXXX-XXXX" autocomplete="tel" maxlength="15" />
+
+      <!-- Gênero -->
+      <fieldset class="radio-group" aria-required="true" aria-labelledby="generoLabel" role="radiogroup">
+        <legend class="radio-label" id="generoLabel">Gênero *</legend>
+        <label class="radio-option" for="generoMasc">
+          <input type="radio" name="genero" id="generoMasc" value="Masculino" required />
+          Masculino
+        </label>
+        <label class="radio-option" for="generoFem">
+          <input type="radio" name="genero" id="generoFem" value="Feminino" />
+          Feminino
+        </label>
+        <label class="radio-option" for="generoOut">
+          <input type="radio" name="genero" id="generoOut" value="Outro" />
+          Outro
+        </label>
+      </fieldset>
+
+      <!-- Condição Médica -->
+      <label for="condicaoMedica">Condição Médica *</label>
+      <select id="condicaoMedica" name="condicaoMedica" required aria-required="true" >
+        <option value="" selected disabled>Selecione a condição</option>
+        <option value="Normal">Normal</option>
+        <option value="Urgente">Urgente</option>
+        <option value="Crônico">Crônico</option>
+      </select>
+
+      <!-- Senha -->
+      <label for="senha">Senha *</label>
+      <input type="password" id="senha" name="senha" required aria-required="true" placeholder="Digite sua senha" minlength="6" />
+
+      <!-- Confirmação de Senha -->
+      <label for="confirmarSenha">Confirmar Senha *</label>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" required aria-required="true" placeholder="Confirme sua senha" minlength="6" />
+
+      <!-- Botão submissão -->
+      <button type="submit" style="margin: 15px  ;" aria-label="Cadastrar">Cadastrar</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
