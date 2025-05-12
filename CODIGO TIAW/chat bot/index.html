@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Chatbot de Agendamento</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+  <main class="chat-container" role="main" aria-label="Chatbot para agendamento de consultas">
+    <header>Chatbot de consultas</header>
+    <section class="messages" aria-live="polite" aria-relevant="additions" id="chatMessages" tabindex="0"></section>
+    <div class="suggestions" aria-label="Opções sugeridas" id="suggestions"></div>
+    <form class="input-area" id="formChat" aria-label="Área de envio de mensagens">
+      <label for="inputMessage" class="visually-hidden">Digite sua mensagem</label>
+      <textarea id="inputMessage" rows="1" placeholder="Digite aqui sua mensagem" aria-required="true" aria-describedby="inputHint"></textarea>
+      <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+    </form>
+    <div id="inputHint" class="visually-hidden">Digite sua mensagem e pressione Enviar</div>
+  </main>
+
+</body>
+</html>
