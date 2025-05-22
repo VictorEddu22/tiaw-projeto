@@ -1,0 +1,217 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7f0;
+    color: #2f4f2f;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+    color: white;
+    padding: 4rem 2rem 5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+
+  header p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .btn-primary {
+    background: #66bb6a;
+    background: linear-gradient(45deg, #66bb6a, #81c784);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(102, 187, 106, 0.4);
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(45deg, #81c784, #66bb6a);
+    box-shadow: 0 8px 15px rgba(129, 199, 132, 0.6);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: -6rem auto 3rem;
+    background: white;
+    border-radius: 15px;
+    padding: 3rem 2rem 4rem;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  section h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+  }
+
+  section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #3b5d30;
+  }
+
+  /* Services List */
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    background: #e8f5e9;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(46, 125, 50, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 22px rgba(46, 125, 50, 0.3);
+  }
+
+  .service-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #27632a;
+  }
+
+  .service-card p {
+    font-weight: 300;
+    color: #2f4f2f;
+    font-size: 1rem;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 2rem auto 0;
+  }
+
+  .testimonial {
+    background: #dcedc8;
+    border-left: 6px solid #4caf50;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    font-style: italic;
+    color: #33691e;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.1);
+    position: relative;
+  }
+
+  .testimonial::before {
+    content: "“";
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: #aed581;
+    font-family: serif;
+  }
+
+  .testimonial-author {
+    margin-top: 0.75rem;
+    text-align: right;
+    font-weight: 600;
+    font-style: normal;
+    color: #2e7d32;
+  }
+
+  /* Contact Call-to-action */
+  .contact-section {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.4);
+  }
+
+  .contact-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .contact-section a.btn-primary {
+    background: white;
+    color: #2e7d32;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .contact-section a.btn-primary:hover {
+    background: #dcedc8;
+    color: #27632a;
+    box-shadow: 0 8px 18px rgba(39, 99, 42, 0.6);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #7a9a62;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    main {
+      margin: -4rem 1rem 2rem;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    .services-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-card {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
